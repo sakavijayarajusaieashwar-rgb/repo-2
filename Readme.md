@@ -1,18 +1,14 @@
-# Master Branch
+# Main Branch
 
-## What is the master branch?
+## What is the main branch?
 
-The `master` branch was the older default branch used in Git repositories.
+The `main` branch is the default primary branch used in modern Git and GitHub repositories.
 
-Older projects and tutorials may still use:
+It usually contains:
 
-* `master`
-
-instead of:
-
-* `main`
-
-Functionally both branches work the same way.
+* stable code
+* latest project version
+* production-ready changes
 
 ---
 
@@ -20,48 +16,44 @@ Functionally both branches work the same way.
 
 ## Check current branch
 
-```bash id="0zclt2"
+```bash id="e5k5n5"
 git branch
 ```
 
 ---
 
-## Push code to master branch
+## Push code to main branch
 
-```bash id="lk3nr0"
-git push origin master
+```bash id="fwgm4g"
+git push origin main
 ```
 
 ---
 
 ## First push with upstream
 
-```bash id="y0f8s3"
-git push -u origin master
+```bash id="7v4y0w"
+git push -u origin main
 ```
 
 ---
 
 # Example Workflow
 
-```bash id="gqj6cb"
+```bash id="dtd0it"
 git add .
 git commit -m "Update project"
-git push origin master
+git push origin main
 ```
 
 ---
 
 # Important Note
 
-Older Git repositories commonly use:
+Most new GitHub repositories now use:
 
-```bash id="tw1b4s"
-master
-```
-
-while newer repositories usually use:
-
-```bash id="0ejh9m"
+```bash id="szg1qt"
 main
 ```
+
+instead of `master`.
